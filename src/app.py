@@ -9,8 +9,8 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 CORS(app)
 
-# create the jackson family object
-the_family = Family("Jackson")
+# create the Smith family object
+the_family = Family("Smith")
 
 # Handle/serialize errors like a JSON object
 @app.errorhandler(APIException)
