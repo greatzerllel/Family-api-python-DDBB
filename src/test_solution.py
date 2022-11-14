@@ -25,7 +25,7 @@ def test_first_three(client):
 @pytest.mark.it("Implement method POST /member to add a new member")
 def test_add_implementation(client):
     response = client.post('/member', json={
-		"first_name": "Tommy",
+		"first_name": "Joshua",
         "id": 3443,
 		"age": 23,
 		"lucky_numbers": [34,65,23,4,6]
@@ -35,7 +35,7 @@ def test_add_implementation(client):
 @pytest.mark.it("Method POST /member should return an EMPTY response body")
 def test_add_empty_reponse_body(client):
     response = client.post('/member', json={
-		"first_name": "Sandra",
+		"first_name": "Katy",
 		"age": 12,
         "id": 4446,
 		"lucky_numbers": [12,34,33,45,32,12]
