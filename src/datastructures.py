@@ -15,21 +15,21 @@ class Family:
                 "id": self._generateId(),
                 "first_name": "Jose",
                 "last_name": self.last_name,
-                "age": 7,
+                "age": 22,
                 "lucky_numbers": [7, 13, 22] },
 
             {
                 "id": self._generateId(),
                 "first_name": "Hellen",
                 "last_name": self.last_name,
-                "age": 5,
+                "age": 12,
                 "lucky_numbers": [10, 14, 3] },
 
             {
                 "id": self._generateId(),
                 "first_name": "Mikela",
                 "last_name": self.last_name,
-                "age": 12,
+                "age": 33,
                 "lucky_numbers": [1] }]
 
     

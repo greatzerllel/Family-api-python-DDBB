@@ -49,7 +49,7 @@ def add_member():
         "lucky_numbers": body_lucky_numbers,
     }
     the_family.add_member(member)
-    return jsonify(None), 200
+    return jsonify("El miembro de la familia ha sido agregado exitozamente"), 200
 
 @app.route('/member/<int:member_id>', methods=['DELETE'])
 def delete_one_member(member_id):
