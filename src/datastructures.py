@@ -33,4 +33,24 @@ class Family:
                 "lucky_numbers": [1] }]
 
     
-   
+    def _generateId(self):
+        return randint(0, 99999999)
+
+    def add_member(self, member):
+        self._members.append(member)
+        return None
+
+    def delete_member(self, id):
+        for member in self._members:
+            if member["id"] == id:
+                self._members.remove(member)
+        pass
+
+    def get_member(self, id):
+        for member in self._members:
+            if member['id'] == id:
+                return member
+
+    
+    def get_all_members(self):
+        return self._members
